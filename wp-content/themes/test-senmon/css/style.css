@@ -1,0 +1,658 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*余白が入らないように*/
+  margin: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    height: 75px;
+    width: 100%;
+  }
+}
+
+.header .container-fluid {
+  padding: 0;
+}
+
+.header .logo,
+.header .nav,
+.header .icon {
+  padding: 0;
+}
+
+.header .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav-group ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+.header .nav-group li {
+  background-color: #333333;
+}
+
+.header .nav-group a {
+  color: #e9e9e9;
+  padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .header .nav .disappear_pc {
+    /*　画面サイズが1000pxから　*/
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .header .nav .disappear_pc {
+    /*　画面サイズが1000pxから　*/
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .nav .appearance_smartphone {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .header .nav .appearance_smartphone {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header .nav {
+    display: none;
+  }
+  .header .nav .nav-group a {
+    font-size: 15px;
+  }
+}
+
+.header .icon {
+  width: 100px;
+  height: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header .icon {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.header .icon .siryou-icon {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-color: #333;
+  color: #e9e9e9;
+  text-align: center;
+  vertical-align: bottom;
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header .icon .siryou-icon {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.header .icon .siryou-icon i,
+.header .icon .siryou-icon p {
+  height: 25px;
+  text-align: center;
+}
+
+.header .icon .siryou-icon a,
+.header .icon .siryou-icon p {
+  color: #e9e9e9;
+}
+
+.header .icon .siryou-icon p {
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header .icon .siryou-icon p {
+    padding-top: 0;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header .icon .fa-3x {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.top {
+  height: 500px;
+  width: 100%;
+}
+
+.top-img {
+  max-width: 100%;
+  height: 100%;
+  background-image: url(../img/top-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-img p,
+.top-img h2 {
+  color: #fff;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.gakka {
+  width: 100%;
+  background-color: #333333;
+}
+
+.gakka h2 {
+  color: #fff;
+}
+
+.gakka .card {
+  border: 1px solid #333333;
+  background-color: #454c50;
+}
+
+.gakka .gakka-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gakka .gakka-item h3 {
+  margin-top: 10px;
+}
+
+.gakka .gakka-item h3,
+.gakka .gakka-item p {
+  color: #fff;
+}
+
+.gakka .gakka-item img {
+  height: auto;
+}
+
+.strong {
+  background-color: #000000;
+}
+
+.strong h2,
+.strong h3,
+.strong p {
+  color: #c09933;
+}
+
+.strong p {
+  padding-bottom: 20px;
+}
+
+.strong h3 {
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .strong h3 {
+    text-align: center;
+  }
+}
+
+.openchanpass {
+  background-color: #60caad;
+  padding-bottom: 20px;
+}
+
+.openchanpass #slider {
+  padding: 0;
+}
+
+.openchanpass #slider p,
+.openchanpass #slider h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.openchanpass #slider img {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .openchanpass #slider img {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .openchanpass #slider img {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .openchanpass #slider img {
+    /*　画面サイズが1000pxから　*/
+    width: 350px;
+  }
+}
+
+.siryou {
+  background-color: #333;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.siryou .siryou-btn {
+  background-color: #333;
+  border: 1px solid #c09933;
+  padding: 25px 50px;
+  border-radius: 30px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.siryou .siryou-btn:hover {
+  color: #000;
+  background-color: #c09933;
+  border-color: #c09933;
+}
+
+.siryou .siryou-btn:hover a {
+  color: #000;
+}
+
+.siryou .siryou-btn a {
+  display: inline-block;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .siryou .siryou-btn a {
+    font-size: 20px;
+  }
+}
+
+.siryou a {
+  color: #c09933;
+}
+
+.siryou div,
+.siryou p {
+  text-align: center;
+}
+
+.siryou p {
+  color: #fff;
+  padding-top: 10px;
+}
+
+.ichiran {
+  background-color: #e9e9e9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .ichiran .ichiran-pc {
+    display: none;
+  }
+}
+
+.ichiran li {
+  padding-top: 15px;
+}
+
+.ichiran a {
+  color: #333333;
+  padding: 5px;
+}
+
+.ichiran a:hover {
+  opacity: 0.5;
+}
+
+.ichiran .ichiran-group ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+.footer {
+  background-color: #333333;
+}
+
+.footer .container {
+  padding: 0;
+}
+
+.footer p {
+  color: #fff;
+  padding-top: 25px;
+  padding-left: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer p {
+    padding-top: 30px;
+  }
+}
+
+.search_container {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #60caad;
+  display: block;
+  border-radius: 3px;
+  height: 2.3em;
+  overflow: hidden;
+}
+
+.search_container input[type="text"] {
+  border: none;
+  height: 2.1em;
+}
+
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+
+.search_container input[type="submit"] {
+  cursor: pointer;
+  font-family: "Font Awesome 5 Free";
+  border: none;
+  background: #60caad;
+  color: #e9e9e9;
+  position: absolute;
+  width: 3.5em;
+  height: 3em;
+  right: 0px;
+  top: -5px;
+  outline: none;
+}
+
+/* 必須マーク */
+.must {
+  color: #fff;
+  margin-right: 10px;
+  padding: 6px 10px;
+  background: #F92931;
+  border-radius: 20px;
+}
+
+/* 任意マーク */
+.free {
+  color: #fff;
+  margin-right: 10px;
+  padding: 6px 10px;
+  background: #424242;
+  border-radius: 20px;
+}
+
+/* 項目名を太字にする */
+form p {
+  font-weight: 600;
+}
+
+/* 入力項目を見やすくする */
+input.wpcf7-form-control.wpcf7-text {
+  width: 100%;
+  padding: 8px 15px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 1px solid #d0d5d8;
+  border-radius: 3px;
+}
+
+textarea.wpcf7-form-control.wpcf7-textarea {
+  width: 100%;
+  padding: 8px 15px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 1px solid #d0d5d8;
+  border-radius: 3px;
+  height: 200px;
+}
+
+/* 必須項目の入力欄を黄色にする */
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+  background: rgba(255, 255, 142, 0.46);
+}
+
+input.wpcf7-submit {
+  width: 100%;
+  height: 80px;
+  background: #60caad;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* 送信ボタンを見やすくする */
+/* エラーメッセージを見やすくする */
+span.wpcf7-not-valid-tip, .wpcf7-response-output.wpcf7-validation-errors {
+  color: red;
+  font-weight: 600;
+}
+
+.sns {
+  background-color: #e9e9e9;
+}
+
+.sns .sns-twitter {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sns .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .sns .flex {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.sns .sns-item a {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  border-radius: 7px;
+  /*角丸に*/
+  width: 190px;
+  /*幅*/
+  text-align: center;
+  /*中身を中央寄せ*/
+  line-height: 50px;
+  /*高さと合わせ*/
+}
+
+.sns .sns-item a span {
+  font-size: 25px;
+  /*文字のサイズ*/
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.sns .-facebook a {
+  background-color: #3c5a99;
+  /*アイコン*/
+  font-size: 35px;
+  /*アイコンサイズ*/
+  position: relative;
+  top: 4px;
+  /*アイコン位置の微調整*/
+}
+
+.sns .-line a {
+  background-color: #00b900;
+  /*アイコン*/
+  font-size: 35px;
+  /*アイコンサイズ*/
+  position: relative;
+  top: 4px;
+  /*アイコン位置の微調整*/
+}
+
+.sns .-instagram {
+  padding-top: 13px;
+}
+
+.sns .insta_btn {
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  /*グラデーション①*/
+  overflow: hidden;
+  /*はみ出た部分を隠す*/
+  text-decoration: none;
+  /*下線は消す*/
+}
+
+.sns .insta_btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*全体を覆う*/
+  height: 100%;
+  /*全体を覆う*/
+  background: linear-gradient(15deg, #ffdb2c, #f9764c 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+}
+
+.sns .insta_btn .fa-instagram {
+  /*アイコン*/
+  font-size: 35px;
+  /*アイコンサイズ*/
+  position: relative;
+  top: 4px;
+  /*アイコン位置の微調整*/
+}
+
+.sns .insta_btn span {
+  /*テキスト*/
+  display: inline-block;
+  position: relative;
+}
+
+.sns .-youtube a {
+  background-color: #d91025;
+  /*アイコン*/
+  font-size: 35px;
+  /*アイコンサイズ*/
+  position: relative;
+  top: 4px;
+  /*アイコン位置の微調整*/
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,143 @@
+.header {
+  // height: 100px;
+  background-color: #333333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*余白が入らないように*/
+  margin: 0;
+  width: 100%;
+  z-index: 10;
+
+  @media #{$smartphone} {
+    height: 75px;
+    width: 100%;
+    // margin-left: -10px;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .logo,
+  .nav,
+  .icon {
+    padding: 0;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-group {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    li {
+      background-color: #333333;
+    }
+    a {
+      color: #e9e9e9;
+      padding: 15px;
+    }
+  }
+
+  .nav {
+    .disappear_pc{
+      @media screen and (min-width: 768px) {
+        /*　画面サイズが1000pxから　*/
+        display: none;
+      }
+      @media screen and (min-width: 1400px) {
+        /*　画面サイズが1000pxから　*/
+        display: block;
+      }
+    }
+
+    .appearance_smartphone{
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+      @media screen and (min-width: 1400px) {
+        display: none;
+      }
+    }
+
+    @media #{$smartphone} {
+      .nav-group a {
+        font-size: 15px;
+      }
+      display: none;
+    }
+  }
+
+  .icon {
+    width: 100px;
+    height: 100px;
+
+    @media #{$smartphone} {
+      width: 75px;
+      height: 75px;
+    }
+    .siryou-icon {
+      width: 100px;
+      height: 100px;
+
+      @media #{$smartphone} {
+        width: 75px;
+        height: 75px;
+      }
+
+      display: inline-block;
+      // font-size: 40px;
+      // line-height: 50px;
+      background-color: #333;
+      color: #e9e9e9;
+      // width: 50px;
+      // height: 50px;
+      text-align: center;
+      vertical-align: bottom;
+      padding-top: 15px;
+
+      i,
+      p {
+        // width: 100%;
+        height: 25px;
+        text-align: center;
+      }
+      a,
+      p {
+        color: #e9e9e9;
+      }
+      p {
+        padding-top: 10px;
+
+        @media #{$smartphone} {
+          padding-top: 0;
+          font-size: 15px;
+        }
+      }
+    }
+    .fa-3x {
+      @media #{$smartphone} {
+        font-size: 2em;
+      }
+    }
+  }
+
+  // #menu-btn-check {
+  //   display: none;
+  // }
+}
+
+@media #{$smartphone} {
+  .logo {
+    width: 75px;
+    height: 75px;
+  }
+}

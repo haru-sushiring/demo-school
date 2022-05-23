@@ -1,0 +1,45 @@
+.search_container {
+  position: relative;
+  box-sizing: border-box;
+  //   border: 2px solid #3879d9;
+  border: 2px solid #60caad;
+  display: block;
+  //   padding: 3px 10px;
+  border-radius: 3px;
+  height: 2.3em;
+  //   width: 265px;
+  overflow: hidden;
+
+  @media #{$smartphone} {
+    // width: 150px;
+  }
+
+  input {
+    &[type="text"] {
+      border: none;
+      height: 2.1em;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+    // &[type="text" i] {
+    //   padding: 0;
+    // }
+
+    &[type="submit"] {
+      cursor: pointer;
+      font-family: "Font Awesome 5 Free";
+      border: none;
+      //   background: #3879d9;
+      background: #60caad;
+      color: #e9e9e9;
+      position: absolute;
+      width: 3.5em;
+      height: 3em;
+      right: 0px;
+      top: -5px;
+      outline: none;
+    }
+  }
+}
